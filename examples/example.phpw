@@ -1,0 +1,20 @@
+<?php
+/**
+*   Test application for the Gtk2_FileDrop class
+*   @author Christian Weiske <cweiske@php.net>
+*/
+require_once('Gtk2/FileDrop.php');
+
+$window = new GtkWindow();
+$window->set_default_size(300, 30);
+$window->connect_simple('destroy', array('gtk', 'main_quit'));
+$window->show();
+
+$entry = new GtkEntry();
+$window->add($entry);
+$entry->set_text('drop text files on me');
+Gtk2_FileDrop::attach($entry, array('text/plain'));
+
+$window->show_all();
+Gtk::main();
+?>
