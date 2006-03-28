@@ -18,8 +18,8 @@
 //
 // $Id$
 
-require_once('MIME/Type.php');
-require_once('PEAR.php');
+require_once 'MIME/Type.php';
+require_once 'PEAR.php';
 
 /**
 *   A class which makes it easy to
