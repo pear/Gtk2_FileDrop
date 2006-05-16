@@ -29,7 +29,7 @@ require_once 'PEAR.php';
 *   @author Christian Weiske <cweiske@php.net>
 *   @package Gtk2
 *
-*   @date 2006-02-05 09:45
+*   @date 2006-05-16
 *   @license PHP
 *
 *   @todo
@@ -136,7 +136,9 @@ class Gtk2_FileDrop
                     $bDirectories = true; 
                 }
                 if (($strType[0] == '.' && self::getFileExtension($strFile) == $strType)
-                 || $strType == $strFileMime || MIME_Type::wildcardMatch($strType, $strFileMime)) {
+                 || $strType == $strFileMime
+                 || (strpos($strType, '/') !== false && MIME_Type::wildcardMatch($strType, $strFileMime))
+                ) {
                     $arAccepted[] = $strFile;
                     $bAccepted    = true;
                     break;
