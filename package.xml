@@ -21,20 +21,20 @@ http://pear.php.net/dtd/package-2.0.xsd">
   <active>yes</active>
  </lead>
 
- <date>2006-05-16</date>
+ <date>2006-11-16</date>
 
  <version>
-  <release>0.1.1</release>
-  <api>0.1.1</api>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
  </version>
  <stability>
-  <release>beta</release>
-  <api>beta</api>
+  <release>stable</release>
+  <api>stable</api>
  </stability>
 
- <license uri="http://www.php.net/license">PHP License</license>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
  <notes>
-  * Fixed warning in MIME_Type
+  Marking stable
  </notes>
  <contents>
   <dir name="/" baseinstalldir="Gtk2">
@@ -70,6 +70,22 @@ http://pear.php.net/dtd/package-2.0.xsd">
  <phprelease/>
 
  <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2006-11-16</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+     Marking stable
+   </notes>
+  </release>
+
   <release>
    <version>
     <release>0.1.1</release>
