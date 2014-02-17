@@ -20,7 +20,8 @@
     },
     "type": "library",
     "require": {
-        "pear/pear_exception": "*"
+        "ext-gtk": "*",
+        "pear/mime_type": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
