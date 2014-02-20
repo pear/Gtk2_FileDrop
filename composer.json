@@ -1,0 +1,29 @@
+{
+    "authors": [
+        {
+            "email": "cweiske@php.net",
+            "name": "Christian Weiske",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    },
+    "description": "More info available on: http://pear.php.net/package/Gtk2_FileDrop",
+    "license": "LGPL",
+    "name": "pear/gtk2_filedrop",
+    "support": {
+        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Gtk2_FileDrop",
+        "source": "https://github.com/pear/Gtk2_FileDrop"
+    },
+    "type": "library",
+    "require": {
+        "ext-gtk": "*",
+        "pear/mime_type": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
